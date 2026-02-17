@@ -1,7 +1,5 @@
-// Counter variable
 let counter = 0;
 
-// 1pt: Simple Functions
 function tickUp() {
     counter++;
     document.getElementById("counter").textContent = counter;
@@ -12,7 +10,6 @@ function tickDown() {
     document.getElementById("counter").textContent = counter;
 }
 
-// 1pt: Simple For Loop
 function runForLoop() {
     let result = "";
     for (let i = 0; i <= counter; i++) {
@@ -21,7 +18,6 @@ function runForLoop() {
     document.getElementById("forLoopResult").textContent = result.trim();
 }
 
-// 1pt: Repetition with Condition
 function showOddNumbers() {
     let result = "";
     for (let i = 1; i <= counter; i++) {
@@ -32,7 +28,6 @@ function showOddNumbers() {
     document.getElementById("oddNumberResult").textContent = result.trim();
 }
 
-// 1pt: Arrays
 function addMultiplesToArray() {
     let arr = [];
     if (counter >= 5) {
@@ -45,7 +40,6 @@ function addMultiplesToArray() {
     console.log(arr);
 }
 
-// 2pts: Objects and Form Fields
 function printCarObject() {
     let carObj = {
         cType: document.getElementById("carType").value,
@@ -55,7 +49,6 @@ function printCarObject() {
     console.log(carObj);
 }
 
-// 2pts: Objects and Form Fields pt. 2
 function loadCar(num) {
     let car;
     if (num === 1) car = carObject1;
@@ -67,7 +60,6 @@ function loadCar(num) {
     document.getElementById("carColor").value = car.cColor;
 }
 
-// 2pt: Changing Styles
 function changeColor(num) {
     let p = document.getElementById("styleParagraph");
     if (num === 1) p.style.color = "red";
